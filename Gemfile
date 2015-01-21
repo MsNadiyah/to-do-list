@@ -1,5 +1,15 @@
 source 'https://rubygems.org'
 
+##### APP SPECIFIC GEMS
+
+gem 'factory_girl_rails'
+
+group :development, :test do
+	gem 'rspec-rails', '~> 3.0'
+	gem 'shoulda-matchers', require: false
+end
+
+#### PRE-INSTALLED GEMS
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
